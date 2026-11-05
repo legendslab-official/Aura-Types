@@ -20,6 +20,18 @@ AuraTypes is an open-source, high-performance touch typing mastery simulator and
 - **Privacy-by-Design:** 100% client-side execution with zero keylogging, zero telemetry, and zero ads.
 
 ---
+## 🚀 Download & Install (For Normal Users)
+
+**Ready to use! No coding required.** Download the latest version for your system directly from the Releases page.
+
+### 🐧 Linux (Debian / Ubuntu)
+👉 **[⬇️ Click Here to Download .deb Package](https://github.com/legendslab-official/Aura-Types/releases/latest)**
+
+Open your terminal and run these commands to install:
+```bash
+cd ~/Downloads
+sudo dpkg -i AuraTypes_8.5.0_amd64.deb
+sudo apt install -f 
 
 ## 💻 Running Locally
 
