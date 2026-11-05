@@ -1,0 +1,7 @@
+{
+  "name": "Aura Type",
+  "description": "3D English typing rain game with dynamic difficulty, customizable cyber pets, mechanical keyboard themes, multiplayer leaderboards, and vocabulary battle arenas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

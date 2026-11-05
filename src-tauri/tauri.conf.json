@@ -1,0 +1,62 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "AuraTypes",
+  "version": "8.5.0",
+  "identifier": "com.auratypes.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "AuraTypes - Touch Typing Mastery (Grade V8.5)",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "deb", "appimage"],
+    "category": "Education",
+    "shortDescription": "Professional Keyboard Mastery & C++ Systems Simulator (Grade V8.5)",
+    "longDescription": "AuraTypes is an elite touch typing trainer featuring Grade V8.5 certification and authentic mechanical sound synthesis.",
+    "copyright": "Copyright © 2026 AuraTypes Open Source Contributors",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "installMode": "currentUser"
+      }
+    },
+    "linux": {
+      "deb": {
+        "depends": [
+          "libwebkit2gtk-4.1-0 | libwebkit2gtk-4.0-37",
+          "libgtk-3-0",
+          "libayatana-appindicator3-1 | libappindicator3-1"
+        ],
+        "section": "education",
+        "priority": "optional"
+      }
+    }
+  }
+}
